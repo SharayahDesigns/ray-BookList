@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import {Link, Outlet} from 'react-router-dom';
 
@@ -7,14 +7,13 @@ function App() {
     <div>
       <h1>Users App</h1>
       <nav style={{
-        border: '2px solid green'
+        border: '2px solid green',
       }}
       >
-        <Link to='/Users'>Users</Link> - {''}
+        <Link to='/users'>Users</Link> | {' '}
         <Link to='/about'>About</Link>
-        
       </nav>
-      <Outlet />
+      <Outlet/>
     </div>
   );
 }
